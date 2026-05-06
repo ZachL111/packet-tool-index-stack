@@ -59,3 +59,5 @@ foreach ($pathPattern in $knownPaths) {
 }
 
 python -m unittest discover -s tests
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-packet-tool-index-detail.ps1
