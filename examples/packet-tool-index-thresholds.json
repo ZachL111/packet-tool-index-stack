@@ -1,0 +1,17 @@
+{
+  "repo": "packet-tool-index-stack",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 5,
+    "ship": 177,
+    "watch": 120
+  },
+  "terms": [
+    "file span",
+    "terminal width",
+    "argument risk",
+    "report density"
+  ]
+}

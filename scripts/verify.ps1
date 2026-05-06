@@ -61,3 +61,9 @@ foreach ($pathPattern in $knownPaths) {
 python -m unittest discover -s tests
 
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-packet-tool-index-detail.ps1
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-packet-tool-index-properties.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-packet-tool-index-golden.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

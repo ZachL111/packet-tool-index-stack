@@ -1,0 +1,28 @@
+{
+  "repo": "packet-tool-index-stack",
+  "language": "Python",
+  "category": "CLI tools",
+  "goal": "Package a Python local lab for index analysis with append-only fixtures, checkpoint recovery checks, and documented operating limits.",
+  "weights": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 5
+  },
+  "thresholds": {
+    "ship": 177,
+    "watch": 120
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
